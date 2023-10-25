@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="417dp"
+        android:layout_height="77dp"
+        android:background="@drawable/app_navbar"
+        android:backgroundTint="#B027A4"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="-15dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/baseline_dehaze_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-19dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="115dp"
+        android:layout_height="21dp"
+        android:text="TaskBuddy"
+        android:textColor="#ffffff"
+        android:textSize="45px"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/baseline_account_circle_24"
+        tools:layout_editor_absoluteX="371dp"
+        tools:layout_editor_absoluteY="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start at"
+        android:textSize="40px"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End at"
+        android:textSize="40px"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reminder"
+        android:textSize="40px"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="315dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Priority"
+        android:textSize="40px"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="315dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High"
+        android:textColor="#000000"
+        android:textSize="40px"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="40px"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="217dp"
+        android:layout_height="39dp"
+        android:background="@drawable/form_border"
+        android:ems="10"
+        android:inputType="text"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="58dp"
+        android:layout_height="22dp"
+        android:background="@drawable/frequency_list"
+        android:text="Weekly"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="525dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="58dp"
+        android:layout_height="22dp"
+        android:background="@drawable/frequency_list"
+        android:text="By days"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="525dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="91dp"
+        android:layout_height="22dp"
+        android:background="@drawable/frequency_list"
+        android:text="Every Year"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="58dp"
+        android:layout_height="22dp"
+        android:background="@drawable/frequency_list"
+        android:text="Monthly"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frequency"
+        android:textSize="40px"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="477dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B027A4"
+        android:text="Create"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="618dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="105dp"
+        android:layout_height="34dp"
+        android:ems="10"
+        android:inputType="date"
+        android:drawableRight="@drawable/baseline_calendar_month_24"
+        android:background="@drawable/form_border"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="132dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextDate2"
+        android:layout_width="97dp"
+        android:layout_height="32dp"
+        android:background="@drawable/form_border"
+        android:ems="10"
+        android:inputType="date"
+        android:drawableRight="@drawable/baseline_calendar_month_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="97dp"
+        android:layout_height="32dp"
+        android:background="@drawable/form_border"
+        android:ems="10"
+        android:inputType="time"
+        android:drawableRight="@drawable/baseline_access_time_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas android.com/tools"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D07DC8">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rafiki2"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="800dp"
+        android:layout_height="638dp"
+        app:srcCompat="@drawable/rectangle_71"
+        tools2:ignore="MissingConstraints"
+        tools2:layout_editor_absoluteX="-173dp"
+        tools2:layout_editor_absoluteY="285dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="169dp"
+        android:layout_height="77dp"
+        android:background="@drawable/signup_button"
+        android:text="Sign Up"
+        android:textColor="#B027A4"
+        android:textSize="60px"
+        tools2:ignore="MissingConstraints,MissingPrefix"
+        tools2:layout_editor_absoluteX="120dp"
+        tools2:layout_editor_absoluteY="475dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="170dp"
+        android:layout_height="78dp"
+        android:backgroundTint="#B027A4"
+        android:text="Sign in"
+        android:textSize="60px"
+        tools2:ignore="MissingConstraints"
+        tools2:layout_editor_absoluteX="120dp"
+        tools2:layout_editor_absoluteY="578dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="579dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step into Productivity!"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="60px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.5"
+        tools2:ignore="MissingConstraints"
+        tools2:layout_editor_absoluteX="91dp"
+        tools:ignore="ExtraText,MissingConstraints"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
