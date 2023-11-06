@@ -20,18 +20,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignInActivity">
+        <activity android:name=".SignInActivity"
+            android:exported="true">
         </activity>
         <activity android:name=".SignUpActivity"
+            android:exported="true"
             android:windowSoftInputMode="adjustResize"></activity>
         <activity android:name=".ProfileViewActivity"
-            android:windowSoftInputMode="adjustResize">
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true">
         </activity>
-        <activity android:name=".SignInUPLayout"></activity>
-        <activity android:name=".AddTaskActivity"/>
-        <activity android:name=".TaskSettingActivity"/>
-        <activity android:name=".TaskLinkActivity"/>
-        <activity android:name=".TaskViewDisplay"/>
+        <activity android:name=".SignInUPLayout"
+            android:exported="true"></activity>
+        <activity android:name=".AddTaskActivity"
+            android:exported="true"/>
+        <activity android:name=".TaskSettingActivity"
+            android:exported="true"/>
+        <activity android:name=".TaskLinkActivity"
+            android:exported="true"/>
+        <activity android:name=".TaskViewDisplay"
+            android:exported="true"/>
     </application>
 
 </manifest>

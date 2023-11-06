@@ -1,3 +1,5 @@
+// IM/2020/051- Mohamed Rusaik
+
 package com.example.task_buddy;
 
 import android.content.Intent;
@@ -73,6 +75,7 @@ public class SignUpActivity extends AppCompatActivity {
         // Redirect to the SignInActivity
         Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
     private void showToast(String message) {

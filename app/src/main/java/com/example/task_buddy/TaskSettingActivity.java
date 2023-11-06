@@ -1,3 +1,5 @@
+//IM/2020/062-Shadurceya Vasanthakumar
+
 package com.example.task_buddy;
 
 import android.content.Intent;
@@ -20,5 +22,6 @@ public class TaskSettingActivity extends AppCompatActivity {
     public void onCreateClick(View view){
         Intent intent = new Intent(this, TaskLinkActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 }

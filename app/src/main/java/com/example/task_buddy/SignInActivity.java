@@ -1,3 +1,5 @@
+// IM/2020/051- Mohamed Rusaik
+
 package com.example.task_buddy;
 
 import android.content.Intent;
@@ -17,7 +19,7 @@ public class SignInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sign_in); // Set the layout XML for the sign-in screen
+        setContentView(R.layout.sign_in);
 
         usernameEditText = findViewById(R.id.usernameEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
@@ -36,6 +38,7 @@ public class SignInActivity extends AppCompatActivity {
         // Create an Intent to start SignUpActivity
         Intent intent = new Intent(SignInActivity.this, SignUpActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
     private void signIn() {
@@ -56,6 +59,7 @@ public class SignInActivity extends AppCompatActivity {
             Intent intent = new Intent(SignInActivity.this, ProfileViewActivity.class);
             intent.putExtra("username", enteredUsername);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         } else {
             // Invalid username or password
             showToast("Invalid username or password. Please try again.");

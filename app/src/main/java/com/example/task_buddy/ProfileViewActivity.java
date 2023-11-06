@@ -1,3 +1,5 @@
+//M/2020/084 - SS Ahamed
+
 package com.example.task_buddy;
 
 import android.content.Intent;
@@ -19,6 +21,7 @@ public class ProfileViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile_view);
+
         // Initialize the TextView using findViewById
         usernameTextView = findViewById(R.id.textView29);
 
@@ -31,6 +34,7 @@ public class ProfileViewActivity extends AppCompatActivity {
     public void onAddTaskClick(View view) {
         Intent intent = new Intent(this, AddTaskActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
 }

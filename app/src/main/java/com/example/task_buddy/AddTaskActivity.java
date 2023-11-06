@@ -1,6 +1,9 @@
+//IM/2020/062-Shadurceya Vasanthakumar
+
 package com.example.task_buddy;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -11,12 +14,16 @@ import androidx.appcompat.app.AppCompatActivity;
 public class AddTaskActivity extends AppCompatActivity {
     private EditText taskNameEditText;
     private EditText taskDescriptionEditText;
+    String taskName;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_task);
 
         taskNameEditText = findViewById(R.id.taskName);
         taskDescriptionEditText = findViewById(R.id.taskDescription);
+
+        taskName = taskNameEditText.getText().toString().trim();
     }
 
 
@@ -38,8 +45,14 @@ public class AddTaskActivity extends AppCompatActivity {
         }
 
         // If checks pass, proceed to the next activity
-        Intent intent = new Intent(this, TaskSettingActivity.class); // Replace with your target activity class
+        Intent intent = new Intent(this, TaskSettingActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+
+        SharedPreferences sharedPreferences = getSharedPreferences("TASKS", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("taskName", taskName);
+        editor.apply();
     }
 
     private int countWords(String input) {
@@ -48,10 +61,5 @@ public class AddTaskActivity extends AppCompatActivity {
         }
         String[] words = input.split("\\s+");
         return words.length;
-    }
-    public void onCreateClick(View view) {
-        // Create an Intent to start SignUpActivity
-        Intent intent = new Intent(AddTaskActivity.this, TaskSettingActivity.class);
-        startActivity(intent);
     }
 }

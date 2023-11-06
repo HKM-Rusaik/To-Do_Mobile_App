@@ -1,3 +1,5 @@
+// IM/2020/051- Mohamed Rusaik
+
 package com.example.task_buddy;
 
 import android.content.Intent;
@@ -16,6 +18,7 @@ public class SignInUPLayout extends AppCompatActivity {
     public void onSignUpClick(View view) {
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
     // Method to be called when the SignIn button is clicked

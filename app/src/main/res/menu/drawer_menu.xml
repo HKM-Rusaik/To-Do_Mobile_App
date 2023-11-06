@@ -1,8 +1,18 @@
+<!-- M/2020/084 - SS Ahamed -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_item1"
-        android:title="Item 1" />
+        android:title="Homw" />
     <item
         android:id="@+id/nav_item2"
-        android:title="Item 2" />
+        android:title="Daily Task" />
+
+    <item
+        android:id="@+id/nav_item3"
+        android:title="Analyse" />
+    <item
+        android:id="@+id/nav_item4"
+        android:title="setting" />
+
+
 </menu>

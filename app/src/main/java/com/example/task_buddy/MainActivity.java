@@ -1,3 +1,5 @@
+// IM/2020/051- Mohamed Rusaik
+
 package com.example.task_buddy;
 
 import android.content.Intent;
@@ -20,9 +22,8 @@ public class MainActivity extends AppCompatActivity {
         getStartedButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle button click here
-//                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
                 startActivity(new Intent(MainActivity.this, SignInUPLayout.class));
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
     }
