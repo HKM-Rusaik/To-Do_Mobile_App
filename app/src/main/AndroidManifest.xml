@@ -17,15 +17,21 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".SignInActivity">
         </activity>
-        <activity android:name=".SignUpActivity"></activity>
-        <activity android:name=".ProfileViewActivity">
+        <activity android:name=".SignUpActivity"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name=".ProfileViewActivity"
+            android:windowSoftInputMode="adjustResize">
         </activity>
+        <activity android:name=".SignInUPLayout"></activity>
+        <activity android:name=".AddTaskActivity"/>
+        <activity android:name=".TaskSettingActivity"/>
+        <activity android:name=".TaskLinkActivity"/>
+        <activity android:name=".TaskViewDisplay"/>
     </application>
 
 </manifest>

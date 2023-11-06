@@ -11,7 +11,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SignInActivity extends AppCompatActivity {
-
     private EditText usernameEditText, passwordEditText;
     private SharedPreferences sharedPreferences;
 
@@ -33,6 +32,11 @@ public class SignInActivity extends AppCompatActivity {
             }
         });
     }
+    public void onSignUpClick(View view) {
+        // Create an Intent to start SignUpActivity
+        Intent intent = new Intent(SignInActivity.this, SignUpActivity.class);
+        startActivity(intent);
+    }
 
     private void signIn() {
         // Get user input
@@ -50,6 +54,7 @@ public class SignInActivity extends AppCompatActivity {
             // Proceed with your app's main functionality or navigate to the main screen
             showToast("Sign-in successful!");
             Intent intent = new Intent(SignInActivity.this, ProfileViewActivity.class);
+            intent.putExtra("username", enteredUsername);
             startActivity(intent);
         } else {
             // Invalid username or password
@@ -60,4 +65,5 @@ public class SignInActivity extends AppCompatActivity {
     private void showToast(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
+
 }

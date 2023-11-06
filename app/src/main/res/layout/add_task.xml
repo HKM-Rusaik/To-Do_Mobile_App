@@ -1,124 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="417dp"
+
+    <!-- Top bar with button, title, and user icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="77dp"
         android:background="@drawable/app_navbar"
         android:backgroundTint="#B027A4"
-        android:textColor="@color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="-15dp" />
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="45dp"
-        android:layout_height="38dp"
-        android:background="#00000000"
-        android:drawableLeft="@drawable/baseline_dehaze_24"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-19dp"
-        tools:layout_editor_absoluteY="4dp" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/baseline_dehaze_24" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="115dp"
-        android:layout_height="21dp"
-        android:text="TaskBuddy"
-        android:textColor="#ffffff"
-        android:textSize="45px"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="10dp" />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="TaskBuddy"
+            android:textColor="#ffffff"
+            android:textSize="45px"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/baseline_account_circle_24"
-        tools:layout_editor_absoluteX="371dp"
-        tools:layout_editor_absoluteY="10dp"
-        tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/baseline_account_circle_24" />
+
+    </LinearLayout>
+
+    <!-- Add Task Title -->
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Task"
         android:textSize="50px"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="106dp"
-        tools:ignore="MissingConstraints" />
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="32dp"/>
 
+    <!-- Task Name Section -->
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Task Name"
         android:textSize="50px"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="179dp" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Task Description"
-        android:textSize="50px"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="287dp" />
+        android:textColor="@color/black"/>
 
     <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="@drawable/form_border"
-        android:ems="10"
-        android:inputType="text"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="320dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="267dp"
-        android:layout_height="72dp"
-        android:backgroundTint="#B027A4"
-        android:text="Go to setting"
-        android:textSize="60px"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="430dp" />
-
-    <EditText
-        android:id="@+id/editTextText1"
-        android:layout_width="250dp"
+        android:id="@+id/taskName"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/form_border"
         android:ems="10"
         android:inputType="text"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="210dp" />
+        android:textColor="@color/black"
+        android:textColorHint="@color/dullBlack"
+        android:hint="task name"
+        android:textAlignment="center"
+        />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
+    <!-- Task Description Section -->
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/baseline_file_present_24"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="179dp" />
+        android:text="Task Description"
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
 
+    <EditText
+        android:id="@+id/taskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/form_border"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginBottom="32dp"
+        android:hint="description"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dullBlack"
+        android:textAlignment="center"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Setting Button -->
+    <Button
+        android:id="@+id/setting_button"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:backgroundTint="#B027A4"
+        android:text="Go to setting"
+        android:textSize="60px"
+        android:onClick="onSettingClick"/>
+
+    <!-- File Present Icon, adjust its placement as needed -->
+
+</LinearLayout>

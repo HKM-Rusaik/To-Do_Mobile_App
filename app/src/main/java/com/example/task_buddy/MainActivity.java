@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Handle button click here
-                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
+//                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
+                startActivity(new Intent(MainActivity.this, SignInUPLayout.class));
             }
         });
     }
